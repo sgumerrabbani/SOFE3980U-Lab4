@@ -4,4 +4,4 @@ In modern softwares, Machine Learning (ML) models are playing a crucial roles. T
 
 ## 1. Single-variable Continuous Regression Problem
 
-This goal is to estimate the value of a continuous variable, $$y$$ ,using the values of input variables, $$\bold{x}=\{x_0,...,x_n}$$
+This goal is to estimate the value of a continuous variable, $$y$$ ,using the values of input variables, $$\mathbf{x}=\{x_0,...,x_n}$$
