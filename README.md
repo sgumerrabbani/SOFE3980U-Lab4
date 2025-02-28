@@ -7,4 +7,4 @@ In modern softwares, Machine Learning (ML) models are playing a crucial roles. T
 This goal is to estimate the value of a continuous variable, $$y$$ ,using the values of input variables, $`\mathbf{x}=\{x_0,...,x_n\}`$
 
 This sentence uses $\` and \`$ delimiters to show math inline: $`\sqrt{3x-1}+(1+x)^2`$
-
+ 
