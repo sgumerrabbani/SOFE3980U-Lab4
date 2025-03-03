@@ -68,16 +68,16 @@ $`n_{negative}=\sum_{i=0}^{n}{(y^{(i)}==0)}`$
 
 for i=0:100
 
-   $\tab th$ =i/100.0
+$\qquad th$ =i/100.0
   
-   $`\tab TP=\sum_{i=0}^{n}{(y^{(i)}==1 \&\&  \hat{y}^{(i)}==1)}`$
+$`\qquad TP=\sum_{i=0}^{n}{(y^{(i)}==1 \&\&  \hat{y}^{(i)}==1)}`$
   
-   $`\tab TPR=\frac{TP}{n_{positive}}`$
+$`\qquad TPR=\frac{TP}{n_{positive}}`$
   
-   $\tab y[i]=TPR$
+$\qquad y[i]=TPR$
   
-   $`\tab FP=\sum_{i=0}^{n}{(y^{(i)}==0 \&\&  \hat{y}^{(i)}==1)}`$
+$`\qquad FP=\sum_{i=0}^{n}{(y^{(i)}==0 \&\&  \hat{y}^{(i)}==1)}`$
   
-   $`\tab FPR=\frac{FP}{n_{negative}}`$
+$`\qquad FPR=\frac{FP}{n_{negative}}`$
   
-   $\tab x[i]=FPR$
+$\qquad x[i]=FPR$
