@@ -15,7 +15,12 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 where $\epsilon$ is a very small number to avoid dividing by zero.
 
 ## 2. Single-variable Binary Regression Problem
-It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y} \in [0,1]`$. By applying a threshold its value can converted into binary value $`\begin{cases}
+It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y} \in [0,1]`$. By applying a threshold its value can converted into binary value 
+
+$`\begin{cases}
       1 & \text{if bank $\hat{y}^{(i)} >=0$}\\
       0 & \text{if bank $\hat{y}^{(i)} <0$}\\
     \end{cases}`$
+The default value of the threshold is 0.5. a binary cross-entropy (BCE) is a metrics to evaluate the model.
+
+$`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y{^{(i)}}))+(1-y^{(i)}) log(1-\hat{y{^{(i)}}))}`$  
