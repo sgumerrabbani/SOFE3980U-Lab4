@@ -30,3 +30,12 @@ $`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\h
     \end{cases}}`$
 
 Another metrics is confusion matrix which is summarized by the following figure.
+
+$`Accuracy=\frac{TP+TN}{TP+TN+FN+FP}`$
+
+$`Precision=\frac{TP}{TP+FP}`$
+
+$`Recall=\frac{TP}{TP+FN}`$
+
+$`F1_{\text{score}}=2 \frac{Precision*Recall}{Precision+Recall}`$
+
