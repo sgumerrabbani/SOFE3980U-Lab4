@@ -15,7 +15,7 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 where $\epsilon$ is a very small number to avoid dividing by zero.
 
 ## 2. Single-variable Binary Regression Problem
-It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y} \in [0,1]`$. By applying a threshold its value can converted into binary value 
+It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=p(\mathbf{x})=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold its value can converted into binary value 
 
 $`\begin{cases}
       1 & \text{if $\hat{y}^{(i)} >=0$}\\
