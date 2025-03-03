@@ -31,6 +31,8 @@ $`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\h
 
 Another metrics is confusion matrix which is summarized by the following figure in which TP, FP, TN, and FN stand for True positive, False Positive, True Negative, and False Negative, repectively.
 
+![](images/confusion_matrix.jpg)  
+
 $`Accuracy=\frac{TP+TN}{TP+TN+FN+FP}`$
 
 $`Precision=\frac{TP}{TP+FP}`$
