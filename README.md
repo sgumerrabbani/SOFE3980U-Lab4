@@ -109,4 +109,4 @@ The [model_1.csv](/SVBR/model_1.csv) file consists of two columns, true and pred
 * Figure out and report the model with better performance.
   
 ## 3. Multiclass Classification
-It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`p(y_j|x) \forall j in {1,...,m }`$. the predection is assigned to the class with the highest probability, $'y^hat= argmax_{j}{p(y_j|x)} \forall j in {1,...,m }`$
+It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`p(y_j|x) \forall j in {1,...,m }`$. the predection is assigned to the class with the highest probability, $'\hat{y}= argmax_{j}{p(y_j|x)} \forall j in {1,...,m }`$
