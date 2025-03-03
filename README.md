@@ -56,3 +56,6 @@ $`Recall=\frac{TP}{TP+FN}`$
 
 $`F1_{\text{score}}=2 \frac{Precision*Recall}{Precision+Recall}`$
 
+A better model has a smaller BCE and larger Accuracy, Precision, Recall, and $`F1_{\text{score}}$. Another way to evaluate a model is by using a ROC curve. The curve plotting the true positive rate versus the false positive rate for different threshold as shown in the following fgure
+
+![](images/ROC.jpg)  
