@@ -109,9 +109,9 @@ The [model_1.csv](/SVBR/model_1.csv) file consists of two columns, true and pred
 * Figure out and report the model with better performance.
   
 ## 3. Multiclass Classification
-It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`\hat{y}_j=p(y_j|x) \forall j \in {1,...,m }`$. the predection is assigned to the class with the highest probability, $`\hat{y}= argmax_{j}{p(y_j|x)} \forall j \in {1,...,m }`$
+It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represent $`\hat{y}_j=p(y_j|x) \forall j \in {1,...,m }`$. the prediction is assigned to the class with the highest probability, $`\hat{y}= argmax_{j}{p(y_j|x)} \forall j \in {1,...,m }`$
 
-Cross entropy can be calculated to evaluate this type of models.
+Cross entropy can be calculated to evaluate this type of model.
 
 $`CE=-\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
       log(\hat{y}^{(i)}_1) & \text{if $y^{(i)}=1$}\\
@@ -120,7 +120,7 @@ $`CE=-\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
       log(\hat{y}^{(i)}_m) & \text{if $y^{(i)}=m$}\\
     \end{cases}}`$
 
-A confusion matrix is constructed as shown in the following figure.
+A confusion matrix is constructed, as shown in the following figure.
 
 ![](images/confusion_matrix2.jpg)  
 
@@ -135,7 +135,7 @@ java -jar target/MCC-1.0.0-jar-with-dependencies.jar
 The [model.csv](/SVBR/model_1.csv) file consists of six columns. The first is actual class $'\in \{1,...,5}`$. Other columns represents $'hat{y}_j`$. Those are the validation results of an ML model. 
 
 ### Task 3:
-* Update the Java program to calculate the CE, confusion matrix for all the data stored in the [model_1.csv](/MCC/model.csv) file.
+* Update the Java program to calculate the CE and confusion matrix for all the data stored in the [model_1.csv](/MCC/model.csv) file.
 
 ## Discussion
 Compare accuracy, recall, and precision by describing the interpretation of each of them. Using examples shows applications in which one of them is more important than the others.
