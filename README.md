@@ -26,7 +26,7 @@ The default value of the threshold is 0.5. a binary cross-entropy (BCE) is a met
 
 $`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\hat{y}^{(i)})}=\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
       log(\hat{y}^{(i)}) & \text{if $y^{(i)}=1$}\\
-      log(1-\hat{y}^{(i)}) & \text{if bank $y^{(i)}=0$}\\
+      log(1-\hat{y}^{(i)}) & \text{if $y^{(i)}=0$}\\
     \end{cases}}`$
 
 Another metrics is confusion matrix which is summarized by the following figure.
