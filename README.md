@@ -70,14 +70,23 @@ for i=0:100
 
 $\qquad th$ =i/100.0
   
-$`\qquad TP=\sum_{i=0}^{n}{(y^{(i)}==1 \&\&  \hat{y}^{(i)}==1)}`$
+$`\qquad TP=\sum_{i=0}^{n}{(y^{(i)}==1 \&\&  \hat{y}^{(i)}>=th)}`$
   
 $`\qquad TPR=\frac{TP}{n_{positive}}`$
   
 $\qquad y[i]=TPR$
   
-$`\qquad FP=\sum_{i=0}^{n}{(y^{(i)}==0 \&\&  \hat{y}^{(i)}==1)}`$
+$`\qquad FP=\sum_{i=0}^{n}{(y^{(i)}==0 \&\&  \hat{y}^{(i)}>=th)}`$
   
 $`\qquad FPR=\frac{FP}{n_{negative}}`$
   
 $\qquad x[i]=FPR$
+
+To evaluate the ROC curve, the Area under the curve AUC-ROC is calculated using the following procedure.
+
+
+auc=0
+
+for i=1:100
+
+$\qquad$ auc += (y[i-1]+y[i])*abs(x[i-1]-x[i])/2
