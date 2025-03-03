@@ -15,7 +15,7 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 where $\epsilon$ is a very small number to avoid dividing by zero.
 
 ## 2. Single-variable Binary Regression Problem
-It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold its value can converted into binary value 
+It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold, the value can be converted into a binary value.
 
 $`\hat{y}_{\text{binary}}=\begin{cases}
       1 & \text{if $\hat{y} >=$ threshold}\\
@@ -29,7 +29,7 @@ $`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\h
       log(1-\hat{y}^{(i)}) & \text{if $y^{(i)}=0$}\\
     \end{cases}}`$
 
-Another metrics is confusion matrix which is summarized by the following figure in which TP, FP, TN, and FN stand for True positive, False Positive, True Negative, and False Nagative; repectively.
+Another metrics is confusion matrix which is summarized by the following figure in which TP, FP, TN, and FN stand for True positive, False Positive, True Negative, and False Negative, repectively.
 
 $`Accuracy=\frac{TP+TN}{TP+TN+FN+FP}`$
 
