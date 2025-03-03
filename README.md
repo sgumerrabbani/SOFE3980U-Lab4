@@ -12,7 +12,7 @@ $`MAE=\frac{1}{n} \sum_{i=0}^{n}{\big|y^{(i)}-\hat{y}^{(i)}\big|}`$      (Mean A
 
 $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsilon}} *100\%`$      (Mean Absolute Relative Error)
 
-where $\epsilon$ is a very small number to avoid dividing by zero. A model becomes better with the decrease of the MSE, MAE, or MARE values.
+where $\epsilon$ is a very small positive number to avoid dividing by zero. A model becomes better with the decrease of the MSE, MAE, or MARE values.
 
 The folder [/SVCR](/SVCR) within the GitHub repository contains a Maven-managed Java program. The [program](/SVCR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file called [model_1.csv](/SVCR/model_1.csv), and displays the first ten lines of the CSV data using a library called [com.opencsv](https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/). The POM file has been updated to include the library as a dependency and has been configured to be included in the JAR file. Type the following command to build the program after downloading it from the GitHub repository.
 ``` cmd
@@ -108,3 +108,5 @@ The [model_1.csv](/SVBR/model_1.csv) file consists of two columns, true and pred
 * Repeat the metrics evaluation for the validation results from the [model_2.csv](/SVBR/model_2.csv) and [model_3.csv](/SVBR/model_3.csv) files.
 * Figure out and report the model with better performance.
   
+## 3. Multiclass Classification
+It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`p(y_j|x) \forall j in {1,...,m }`$. the predection is assigned to the class with the highest probability, $'y^hat= argmax_{j}{p(y_j|x)} \forall j in {1,...,m }`$
