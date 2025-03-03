@@ -141,5 +141,5 @@ The [model.csv](/SVBR/model_1.csv) file consists of six columns. The first is ac
 Compare accuracy, recall, and precision by describing the interpretation of each of them. Using examples shows applications in which one of them is more important than the others.
 
 ## Deliverables
-1. The code of the three tasks
+1. A GitHub link of the code of the three tasks
 2. Report about the discussion part and the results of the tasks
