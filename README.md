@@ -18,8 +18,8 @@ where $\epsilon$ is a very small number to avoid dividing by zero.
 It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold its value can converted into binary value 
 
 $`\hat{y}_{\text{binary}}=\begin{cases}
-      1 & \text{if $\hat{y}^{(i)} >=0$}\\
-      0 & \text{if $\hat{y}^{(i)} <0$}\\
+      1 & \text{if $\hat{y} >=$ threshold}\\
+      0 & \text{if $\hat{y} <$ threshold}\\
     \end{cases}`$
     
 The default value of the threshold is 0.5. a binary cross-entropy (BCE) is a metrics to evaluate the model.
