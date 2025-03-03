@@ -14,7 +14,7 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 
 where $\epsilon$ is a very small number to avoid dividing by zero. A model becomes better with the decrease of the MSE, MAE, or MARE values.
 
-The folder [/SVCR](/SVCR) within the GitHub repository contains a Maven-managed Java program. The [program](/SVCR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file called [model_1](/SVCR/model_1.csv), and displays the first ten lines of the CSV data using a library called [com.opencsv](https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/). The POM file has been updated to include the library as a dependency and has been configured to be included in the JAR file. Type the following command to build the program after downloading it from the GitHub repository.
+The folder [/SVCR](/SVCR) within the GitHub repository contains a Maven-managed Java program. The [program](/SVCR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file called [model_1.csv](/SVCR/model_1.csv), and displays the first ten lines of the CSV data using a library called [com.opencsv](https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/). The POM file has been updated to include the library as a dependency and has been configured to be included in the JAR file. Type the following command to build the program after downloading it from the GitHub repository.
 ``` cmd
 mvn clean package assembly:single
 ```
@@ -22,7 +22,13 @@ and the following line to execute the program
 ```cmd
 java -jar target/SVCR-1.0.0-jar-with-dependencies.jar
 ```
+The [model_1.csv](/SVCR/model_1.csv) file consists of two columns, true and predicted. Those are the validation results of a ML model. The [/SVCR](/SVCR) folder contains also the validation results of two other models in [model_2.csv](/SVCR/model_2.csv) and  [model_3.csv](/SVCR/model_3.csv).
 
+### Task 1:
+* Update the Java program to calculate the MSE, MAE, and MARE for all the data stored in the [model_1.csv](/SVCR/model_1.csv) file.
+* Repeat the metrics evaluation for the validation results from the [model_2.csv](/SVCR/model_2.csv) and [model_3.csv](/SVCR/model_3.csv) files.
+* Figure out the model with the lower error and recommend it.
+  
 ## 2. Single-variable Binary Regression Problem
 It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=p(y|x)=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold, the value can be converted into a binary value.
 
