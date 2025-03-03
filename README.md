@@ -59,3 +59,19 @@ $`F1_{\text{score}}=2 \frac{Precision*Recall}{Precision+Recall}`$
 A better model has a smaller BCE and larger Accuracy, Precision, Recall, and $F1_{\text{score}}$. Another way to evaluate a model is by using a ROC curve. The curve plots the true positive rate versus the false positive rate for different threshold as shown in the following figure
 
 ![](images/AUC-ROC.png)  
+
+The following procedure calculate the $x$ and $y$ coordinates for the ROC curve.
+
+```python
+$`n_positive=\sum_{i=0}^{n}{y^{(i)}==1}`$
+$`n_negative=\sum_{i=0}^{n}{y^{(i)}==0}`$
+
+for i=0:100
+    $th$=i/100.0
+    $`TP=\sum_{i=0}^{n}{y^{(i)}==1 &&  \hat{y}^{(i)}==1}`$
+    $`TPR=\frac{TP}{n_positive}`$
+    $y[i]=TPR$
+    $`FP=\sum_{i=0}^{n}{y^{(i)}==0 &&  \hat{y}^{(i)}==1}`$
+    $`FPR=\frac{FP}{n_negative}`$
+    $x[i]=FPR$
+```
