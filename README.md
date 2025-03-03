@@ -29,7 +29,7 @@ $`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\h
       log(1-\hat{y}^{(i)}) & \text{if $y^{(i)}=0$}\\
     \end{cases}}`$
 
-Another metrics is confusion matrix which is summarized by the following figure.
+Another metrics is confusion matrix which is summarized by the following figure in which TP, FP, TN, and FN stand for True positive, False Positive, True Negative, and False Nagative; repectively.
 
 $`Accuracy=\frac{TP+TN}{TP+TN+FN+FP}`$
 
