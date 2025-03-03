@@ -63,13 +63,9 @@ A better model has a smaller BCE and larger Accuracy, Precision, Recall, and $F1
 The following procedure calculate the $x$ and $y$ coordinates for the ROC curve.
 
 $`n_{positive}=\sum_{i=0}^{n}{y^{(i)}==1}`$
-
 $`n_{negative}=\sum_{i=0}^{n}{y^{(i)}==0}`$
-
 for i=0:100
-
     $th$=i/100.0
-    
     $`TP=\sum_{i=0}^{n}{y^{(i)}==1 &&  \hat{y}^{(i)}==1}`$
     $`TPR=\frac{TP}{n_{positive}}`$
     $y[i]=TPR$
