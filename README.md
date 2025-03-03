@@ -135,7 +135,7 @@ java -jar target/MCC-1.0.0-jar-with-dependencies.jar
 The [model.csv](/MCC/model.csv) file consists of six columns. The first is actual class $`\in \{1,...,5\}`$. Other columns represents $`\hat{y}_j`$. Those are the validation results of an ML model. 
 
 ### Task 3:
-* Update the Java program to calculate the CE and confusion matrix for all the data stored in the [model_1.csv](/MCC/model.csv) file.
+* Update the Java program to calculate the CE and confusion matrix for all the data stored in the [model.csv](/MCC/model.csv) file.
 
 ## Discussion
 Compare accuracy, recall, and precision by describing the interpretation of each of them. Using examples shows applications in which one of them is more important than the others.
