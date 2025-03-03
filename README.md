@@ -117,9 +117,29 @@ $`CE=-\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
       log(\hat{y}^{(i)}_1) & \text{if $y^{(i)}=1$}\\
       log(\hat{y}^{(i)}_2) & \text{if $y^{(i)}=2$}\\
       ... \\
-      log(1-\hat{y}^{(i)}_m) & \text{if $y^{(i)}=m$}\\
+      log(\hat{y}^{(i)}_m) & \text{if $y^{(i)}=m$}\\
     \end{cases}}`$
 
-a confusion matrix is constructed as shown in the following figure.
+A confusion matrix is constructed as shown in the following figure.
 
+![](images/confusion_matrix2.jpg)  
 
+The folder [/MCC](/MCC) within the GitHub repository contains a Maven-managed Java program. The [program](/MCC/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file called [model.csv](/MCC/model.csv) and displays the first ten lines of the CSV data. Type the following command to build the program after downloading it from the GitHub repository.
+``` cmd
+mvn clean package assembly:single
+```
+and the following line to execute the program
+```cmd
+java -jar target/MCC-1.0.0-jar-with-dependencies.jar
+```
+The [model.csv](/SVBR/model_1.csv) file consists of six columns. The first is actual class $'\in \{1,...,5}`$. Other columns represents $'hat{y}_j`$. Those are the validation results of an ML model. 
+
+### Task 3:
+* Update the Java program to calculate the CE, confusion matrix for all the data stored in the [model_1.csv](/MCC/model.csv) file.
+
+## Discussion
+Compare accuracy, recall, and precision by describing the interpretation of each of them. Using examples shows applications in which one of them is more important than the others.
+
+## Deliverables
+1. The code of the three tasks
+2. Report about the discussion part and the results of the tasks
