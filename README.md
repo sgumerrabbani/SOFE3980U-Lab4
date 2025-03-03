@@ -132,7 +132,7 @@ and the following line to execute the program
 ```cmd
 java -jar target/MCC-1.0.0-jar-with-dependencies.jar
 ```
-The [model.csv](/SVBR/model_1.csv) file consists of six columns. The first is actual class $'\in \{1,...,5}`$. Other columns represents $'hat{y}_j`$. Those are the validation results of an ML model. 
+The [model.csv](/MCC/model.csv) file consists of six columns. The first is actual class $'\in \{1,...,5}`$. Other columns represents $'hat{y}_j`$. Those are the validation results of an ML model. 
 
 ### Task 3:
 * Update the Java program to calculate the CE and confusion matrix for all the data stored in the [model_1.csv](/MCC/model.csv) file.
