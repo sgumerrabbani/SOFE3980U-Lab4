@@ -22,7 +22,7 @@ and the following line to execute the program
 ```cmd
 java -jar target/SVCR-1.0.0-jar-with-dependencies.jar
 ```
-The [model_1.csv](/SVCR/model_1.csv) file consists of two columns, true and predicted. Those are the validation results of a ML model. The [/SVCR](/SVCR) folder contains also the validation results of two other models in [model_2.csv](/SVCR/model_2.csv) and  [model_3.csv](/SVCR/model_3.csv).
+The [model_1.csv](/SVCR/model_1.csv) file consists of two columns, true and predicted. Those are the validation results of an ML model. The [/SVCR](/SVCR) folder also contains the validation results of two other models in [model_2.csv](/SVCR/model_2.csv) and  [model_3.csv](/SVCR/model_3.csv).
 
 ### Task 1:
 * Update the Java program to calculate the MSE, MAE, and MARE for all the data stored in the [model_1.csv](/SVCR/model_1.csv) file.
