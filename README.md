@@ -15,4 +15,4 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 where $\epsilon$ is a very small number to avoid dividing by zero.
 
 ## 2. Single-variable Binary Regression Problem
-It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`\hat{y} \in \{0,1\}'$. The estimated variable
+It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`\hat{y} \in \{0,1\}`$. The estimated variable
