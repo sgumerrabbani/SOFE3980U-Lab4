@@ -39,7 +39,7 @@ $`\hat{y}_{\text{binary}}=\begin{cases}
     
 The default value of the threshold is 0.5. a binary cross-entropy (BCE) is a metrics to evaluate the model.
 
-$`BCE=\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\hat{y}^{(i)})}=\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
+$`BCE=-\frac{1}{n} \sum_{i=0}^{n}{y^{(i)} log(\hat{y}^{(i)})+(1-y^{(i)}) log(1-\hat{y}^{(i)})}=-\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
       log(\hat{y}^{(i)}) & \text{if $y^{(i)}=1$}\\
       log(1-\hat{y}^{(i)}) & \text{if $y^{(i)}=0$}\\
     \end{cases}}`$
@@ -109,4 +109,17 @@ The [model_1.csv](/SVBR/model_1.csv) file consists of two columns, true and pred
 * Figure out and report the model with better performance.
   
 ## 3. Multiclass Classification
-It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`p(y_j|x) \forall j \in {1,...,m }`$. the predection is assigned to the class with the highest probability, $`\hat{y}= argmax_{j}{p(y_j|x)} \forall j \in {1,...,m }`$
+It's a different ML problem in which the output is one of a set of $m$ classes $`y \in {1,...,m }`$. The ML model produces $m$ outputs that represents $`\hat{y}_j=p(y_j|x) \forall j \in {1,...,m }`$. the predection is assigned to the class with the highest probability, $`\hat{y}= argmax_{j}{p(y_j|x)} \forall j \in {1,...,m }`$
+
+Cross entropy can be calculated to evaluate this type of models.
+
+$`CE=-\frac{1}{n} \sum_{i=0}^{n}{\begin{cases}
+      log(\hat{y}^{(i)}_1) & \text{if $y^{(i)}=1$}\\
+      log(\hat{y}^{(i)}_2) & \text{if $y^{(i)}=2$}\\
+      ... \\
+      log(1-\hat{y}^{(i)}_m) & \text{if $y^{(i)}=m$}\\
+    \end{cases}}`$
+
+a confusion matrix is constructed as shown in the following figure.
+
+
