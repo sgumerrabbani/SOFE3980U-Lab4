@@ -14,7 +14,14 @@ $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsi
 
 where $\epsilon$ is a very small number to avoid dividing by zero. A model becomes better with the decrease of the MSE, MAE, or MARE values.
 
-The folder [/SVCR](/SVCR) within the GitHub repositary contains a Maven-managed Java program. The [program](/SVCR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file, called model_1, and displays the first  lines of the data.
+The folder [/SVCR](/SVCR) within the GitHub repositary contains a Maven-managed Java program. The [program](/SVCR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file, called [model_1](/SVCR/model_1.csv), and displays the first ten lines of the CSV data using a library called [com.opencsv](https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/). The POM file is updated to include the library as a dependency and is configured to be included in the JAR file .Type the following command to build the program after downloading it from the GitHub reposatiory.
+``` cmd
+mvn clean package assembly:single
+```
+and the following line to execute the program
+```cmd
+java -jar target/SVCR-1.0.0-jar-with-dependencies.jar
+```
 
 ## 2. Single-variable Binary Regression Problem
 It's similar to the single-variable continuous regression problem except that the output variable has two values: either zero or one,  $`y \in \{0,1\}`$. The estimated variable has a continuous value between 0 and 1, $`\hat{y}=p(y|x)=f_{\Theta}(\mathbf{x}) \in [0,1]`$. By applying a threshold, the value can be converted into a binary value.
