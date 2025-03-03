@@ -10,4 +10,4 @@ $MSE=\frac{1}{n} \sum_{i=0}^{n}{(y-\hat{y})^2}$      (Mean Square Error)
 
 $MAE=\frac{1}{n} \sum_{i=0}^{n}{|y-\hat{y}|}$      (Mean Absolute Error)
 
-$MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y-\hat{y}|}}{|y|+\epsilon}$      (Mean Absolute Relative Error)
+$MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y-\hat{y}|}{|y|+\epsilon}}$      (Mean Absolute Relative Error)
