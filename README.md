@@ -13,3 +13,6 @@ $`MAE=\frac{1}{n} \sum_{i=0}^{n}{\big|y^{(i)}-\hat{y}^{(i)}\big|}`$      (Mean A
 $`MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsilon}} *100\%`$      (Mean Absolute Relative Error)
 
 where $\epsilon$ is a very small number to avoid divide by zero.
+
+## 2. Single-variable Binary Regression Problem
+It's a similar to to the single-variable continuous regression problem expect that the output variable has two values: either zero or one, , $`\hat{y} \in \{0,1\}$. The estimated variable
