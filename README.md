@@ -8,7 +8,7 @@ The goal is to estimate the value of a continuous variable, $$y$$ ,using the val
 
 $MSE=\frac{1}{n} \sum_{i=0}^{n}{\big(y^{(i)}-\hat{y}^{(i)}\big)^2}$      (Mean Square Error)
 
-$MAE=\frac{1}{n} \sum_{i=0}^{n}{|y^{(i)}-\hat{y}^{(i)}|}$      (Mean Absolute Error)
+$MAE=\frac{1}{n} \sum_{i=0}^{n}{\big|y^{(i)}-\hat{y}^{(i)}\big|}$      (Mean Absolute Error)
 
 $MARE=\frac{1}{n} \sum_{i=0}^{n}{\frac{|y^{(i)}-\hat{y}^{(i)}|}{|y^{(i)}|+\epsilon}} *100%$      (Mean Absolute Relative Error)
 
