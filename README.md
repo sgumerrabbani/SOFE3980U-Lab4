@@ -90,3 +90,21 @@ auc=0
 for i=1:100
 
 $\qquad$ auc += (y[i-1]+y[i])*abs(x[i-1]-x[i])/2
+
+0.5 AUC-ROC value means random guessing. Increasing the AUC-ROC values means improvement to the model performance. A perfect model has an AUC-ROC value of about 1.
+
+The folder [/SVBR](/SVBR) within the GitHub repository contains a Maven-managed Java program. The [program](/SVBR/src/main/java/com/ontariotechu/sofe3980U/App.java) reads a CSV file called [model_1.csv](/SVBR/model_1.csv), and displays the first ten lines of the CSV data. Type the following command to build the program after downloading it from the GitHub repository.
+``` cmd
+mvn clean package assembly:single
+```
+and the following line to execute the program
+```cmd
+java -jar target/SVBR-1.0.0-jar-with-dependencies.jar
+```
+The [model_1.csv](/SVBR/model_1.csv) file consists of two columns, true and predicted. Those are the validation results of an ML model. The [/SVBR](/SVBR) folder also contains the validation results of two other models in [model_2.csv](/SVBR/model_2.csv) and  [model_3.csv](/SVBR/model_3.csv).
+
+### Task 1:
+* Update the Java program to calculate the CBE, confusion matrix, Accuracy, Precision, Recall, $F1_{\text{score}}$, and AUC-ROC for all the data stored in the [model_1.csv](/SVBR/model_1.csv) file.
+* Repeat the metrics evaluation for the validation results from the [model_2.csv](/SVBR/model_2.csv) and [model_3.csv](/SVBR/model_3.csv) files.
+* Figure out and report the model with better performance.
+  
