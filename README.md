@@ -1,6 +1,10 @@
 # Lab 4: ML Model Testing and Evaluation
 
-Machine Learning (ML) models play a crucial role in modern software. Testing modern software should include testing the ML models. The design of the ML model is outside the lab's scope. Only ML testing will be covered. Different problems will be considered. For each problem type, corresponding metrics are utilized.
+Machine Learning (ML) models play a crucial role in modern software. Testing modern software should include testing the ML models. The design of the ML model is outside the lab's scope. Only ML 
+testing will be covered. Different problems will be considered. For each problem type, corresponding metrics are utilized.
+
+## Repository:   
+[https://github.com/zubxxr/SOFE3980U-Lab4](https://github.com/zubxxr/SOFE3980U-Lab4) 
 
 ## 1. Single-variable Continuous Regression Problem
 
